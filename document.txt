@@ -1,0 +1,4 @@
+npm i socket.io
+npm install socket.io-client 
+react-router-dom
+npm install express cors nodemon socket.io 
