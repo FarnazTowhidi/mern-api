@@ -9,6 +9,8 @@ function NavBar() {
       <Link to="/orders/new">New Order</Link>
       &nbsp; | &nbsp;
       <Link to="/hotels/">Hotels</Link>
+      &nbsp; | &nbsp;
+      <Link to="/api2/">api2</Link>
     </nav>
   )
 }

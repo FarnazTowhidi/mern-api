@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button} from 'react-bootstrap';
 
 
- function ListHotelPage() {
+ async function ListHotelPage() {
     let aa = [
         {
             name: 'Sam',
@@ -42,7 +42,7 @@ import { Button} from 'react-bootstrap';
    <>   
         <h1>LIST HOTELS</h1>      
         {
-            aa.map((hotel, index) => {
+            aa.map((test) => {
                 return (
                     <p >
                        dfgds
@@ -50,15 +50,7 @@ import { Button} from 'react-bootstrap';
                 );
             })            
         }
-        {
-           hotels.map((hotel, index) => {
-            return (
-                <p >
-                   {hotel.hotel_name}
-                </p>
-            );
-        })      
-        }
+        
    </>
   )
 }

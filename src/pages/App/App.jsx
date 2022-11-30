@@ -10,6 +10,7 @@ import AuthPage from "../AuthPage/AuthPage";
 
 import { Routes,Route } from 'react-router-dom';
 import NavBar from "../../components/NavBar/NavBar";
+import Api2page from "../Api2page/Api2page";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/orders/new" element={<NewOrderPage />} />
         <Route path="/orders/" element={<OrderHistoryPage />} />
         <Route path="/hotels/" element={<ListHotelPage /> }  />
+        <Route path="/Api2/" element={<Api2page />}  />
       </Routes>
       </>
        {/* ): (
