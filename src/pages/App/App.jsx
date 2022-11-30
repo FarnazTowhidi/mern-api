@@ -1,6 +1,6 @@
 
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NewOrderPage from "../NewOrderPage/NewOrderPage";
 import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage";
 import ListHotelPage from "../ListHotelPage/ListHotelPage";
@@ -14,25 +14,23 @@ import NavBar from "../../components/NavBar/NavBar";
 
 function App() {
   const [user,setUser] = useState(null)
-
+  
   return (
     <main className="App">
        <NavBar /> 
       {/* { user ? ( */}
-      <>
-      
+      <>     
       <Routes>
         <Route path="/" element={Home} />
         <Route path="/:roomId" element={ChatRoom} />
         <Route path="/orders/new" element={<NewOrderPage />} />
         <Route path="/orders/" element={<OrderHistoryPage />} />
-        <Route path="/hotels/" element={<ListHotelPage />} />
+        <Route path="/hotels/" element={<ListHotelPage /> }  />
       </Routes>
       </>
        {/* ): (
        <AuthPage />)} */}
     </main>
-
   );
 }
 
