@@ -1,10 +1,10 @@
 import React from 'react'
-import useChat from '../../useChat';
+// import useChat from '../../useChat';
 
-function ChatRoom(props) {
-  const { roomId } = props.match.params; // Gets roomId from URL
-  const { messages, sendMessage } = useChat(roomId); // Creates a websocket and manages messaging
-  const [newMessage, setNewMessage] = React.useState(""); // Message to be sent
+function ChatRoom() {
+  // const { roomId } = props.match.params; // Gets roomId from URL
+   const { messages, sendMessage } = React.useState("") // Creates a websocket and manages messaging
+   const [newMessage, setNewMessage] = React.useState(""); // Message to be sent
 
   const handleNewMessageChange = (event) => {
     setNewMessage(event.target.value);
@@ -19,19 +19,14 @@ function ChatRoom(props) {
 
   return (
     <div className="chat-room-container">
-      <h1 className="room-name">Room: {roomId}</h1>
+      <h1 className="room-name">Room1</h1>
       <div className="messages-container">
         <ol className="messages-list">
-          {messages.map((message, i) => (
-            <li
-              key={i}
-              className={`message-item ${
-                message.ownedByCurrentUser ? "my-message" : "received-message"
-              }`}
-            >
-              {message.body}
+         
+            <li>
+              show all message
             </li>
-          ))}
+     
         </ol>
       </div>
       <textarea
